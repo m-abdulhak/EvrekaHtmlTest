@@ -18,7 +18,7 @@ body{
 	vertical-align: bottom;
 }
 
-.form-control, .input-group-prepend, .input-group-text{
+.faded{
 	background: #f4f4f4;
 }
 
@@ -29,4 +29,33 @@ body{
 
 .btn-circle{
     border-radius: 50%;
+}
+
+table{
+	margin-top: 20px;
+}
+
+table th{
+    color: #070067;
+	font-weight: 600;
+	line-height: 12px;
+}
+
+table .search-row .form-control{
+    width: 90%;
+}
+
+.pen-wrapper{
+	display: inline-block;
+	background: #070067;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+
+.pen-wrapper .fa-pen{
+	color:white;
+	padding: 2px;
+	font-size: 0.5em;
+    vertical-align: middle;
 }

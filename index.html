@@ -1,59 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="HTML Test">
-		<meta name="author" content="m_abdulhak@outlook.com">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="HTML Test">
+	<meta name="author" content="m_abdulhak@outlook.com">
 
-		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
-		<link rel="stylesheet" href="css/styles.css?v=1.0">
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
 
-		<title>HTML Test</title>
-	</head>
-	<body>
-		<div class="container-fluid">
-		  	<div class="row">
-		    	<div class="col-sm-11">
-		    		<i class="fas fa-map fa-2x darkgrey"></i>
+	<title>HTML Test</title>
+</head>
 
-					<div class="btn-group btn-group-sm" role="group" aria-label="...">
-					    <input type="text" class="form-control" placeholder="05.04.2019">
-					    <div class="input-group-prepend">
-							<div class="input-group-text" id="btnGroupAddon">
-								<i class="far fa-calendar-alt"></i>
-							</div>
-					    </div>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-11">
+				<i class="fas fa-map fa-2x darkgrey"></i>
+				<div class="btn-group btn-group-sm" role="group" aria-label="...">
+					<input type="text" class="form-control faded" placeholder="05.04.2019">
+					<div class="input-group-prepend faded">
+						<div class="input-group-text faded" id="btnGroupAddon">
+							<i class="far fa-calendar-alt"></i>
+						</div>
 					</div>
-					<button type="button" class="btn btn-md btn-dark">		      		
-						<i class="fas fa-arrow-right"></i>
-					</button>
-		    	</div>
-		    	<div class="col-sm-1">
-					<button type="button" class="btn btn-success btn-circle">		      		
-						<i class="fas fa-plus"></i>
-					</button>
-		    	</div>
-		  	</div>
-
-		  	<div class="row">
-		    	<div class="col-sm">
-		    		<strong>Routes</strong>
-		    	</div>
-		  	</div>
-
-		  	<div class="row">
-		    	<div class="col-sm">
-		    		<i class="fas fa-file-alt"></i>  <span>Create Report</span>
-		    	</div>
-		  	</div>
+				</div>
+				<button type="button" class="btn btn-md btn-dark">
+					<i class="fas fa-arrow-right"></i>
+				</button>
+			</div>
+			<div class="col-sm-1">
+				<button type="button" class="btn btn-success btn-circle">
+					<i class="fas fa-plus"></i>
+				</button>
+			</div>
 		</div>
-	</body>
+
+		<div class="row">
+			<div class="col-sm">
+				<strong>Routes</strong>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm">
+				<i class="fas fa-file-alt"></i> <span>Create Report</span>
+			</div>
+		</div>
+
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th scope="col">Name<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Vehicle  <div class="pen-wrapper btn-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Time<i class="fas fa-sort-amount-down float-right"></i></th>
+					<th scope="col">Driver<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Helper<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Performance<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Status<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Map</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="search-row">
+					<th scope="row">
+						<input type="text" class="form-control" placeholder="Search">
+					</th>
+					<td>
+						<input type="text" class="form-control" placeholder="Search">
+					</td>
+					<td>
+						<input type="text" class="form-control" placeholder="Search">
+					</td>
+					<td>
+						<input type="text" class="form-control" placeholder="Search">
+					</td>
+					<td>
+						<input type="text" class="form-control" placeholder="Search">
+					</td>
+					<td>
+						<input type="text" class="form-control faded" placeholder="Search">
+					</td>
+					<td>
+						<input type="text" class="form-control" placeholder="Search">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
 </html>
