@@ -1,7 +1,6 @@
 
 body{
 	margin: 30px 10px;
-	background: #eceff4;
 	background: #e9ecef;
 }
 
@@ -27,7 +26,7 @@ body{
 	background: #495057;
 }
 
-.btn-circle{
+.border-circle{
     border-radius: 50%;
 }
 
@@ -37,12 +36,27 @@ table{
 
 table th{
     color: #070067;
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 13px;
 	line-height: 12px;
 }
 
 table .search-row .form-control{
     width: 90%;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table tbody tr.table-light{
+	color: #070067;
+    border-bottom: 5px solid #e9ecef;
+    height: 60px;
+}
+
+.table .fa-route{
+	margin: 0px 20px;
 }
 
 .pen-wrapper{

@@ -10,11 +10,11 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -25,7 +25,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-11">
+			<div class="col-sm">
 				<i class="fas fa-map fa-2x darkgrey"></i>
 				<div class="btn-group btn-group-sm" role="group" aria-label="...">
 					<input type="text" class="form-control faded" placeholder="05.04.2019">
@@ -38,9 +38,7 @@
 				<button type="button" class="btn btn-md btn-dark">
 					<i class="fas fa-arrow-right"></i>
 				</button>
-			</div>
-			<div class="col-sm-1">
-				<button type="button" class="btn btn-success btn-circle">
+				<button type="button" class="btn btn-success border-circle float-right ">
 					<i class="fas fa-plus"></i>
 				</button>
 			</div>
@@ -62,13 +60,13 @@
 			<thead>
 				<tr>
 					<th scope="col">Name<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Vehicle  <div class="pen-wrapper btn-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Vehicle  <div class="pen-wrapper border-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
 					<th scope="col">Time<i class="fas fa-sort-amount-down float-right"></i></th>
 					<th scope="col">Driver<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
 					<th scope="col">Helper<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Performance<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+					<th scope="col">Performance  <div class="pen-wrapper border-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
 					<th scope="col">Status<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Map</th>
+					<th scope="col"></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -95,21 +93,78 @@
 						<input type="text" class="form-control" placeholder="Search">
 					</td>
 				</tr>
-				<tr>
-					<th scope="row">2</th>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
+				<tr class="table-light">
+					<th scope="row">13:30 Vardiyası</th>
+					<td>Fenertepe</td>
+					<td>13:12</td>
+					<td>Tanir Nalnant</td>
+					<td></td>
+					<td>21 / 101</td>
+					<td class="text-success">Dispatched</td>
+					<td><i class="fas fa-route fa-lg"></i></td>
 				</tr>
-				<tr>
-					<th scope="row">3</th>
-					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
+				<tr class="table-light">
+					<th scope="row">13:30 Vardiyası</th>
+					<td>Boğazköy</td>
+					<td>13:11</td>
+					<td>Selçuk Yurt</td>
+					<td></td>
+					<td>18 / 80</td>
+					<td class="text-success">Dispatched</td>
+					<td><i class="fas fa-route fa-lg"></i></td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">07:30 Vardiyası</th>
+					<td>Başakşehir</td>
+					<td>07:30</td>
+					<td>Emri Akça</td>
+					<td></td>
+					<td>107 / 148</td>
+					<td>Finished</td>
+					<td><i class="fas fa-route fa-lg"></i></td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">07:30 Vardiyası</th>
+					<td>4.5.Etap</td>
+					<td>07:30</td>
+					<td>Yaşar Demir</td>
+					<td></td>
+					<td>102 / 138</td>
+					<td>Finished</td>
+					<td><i class="fas fa-route fa-lg"></i></td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">07:30 Vardiyası</th>
+					<td>Kayaşehir</td>
+					<td>07:30</td>
+					<td>Ömer Osman Ekiz</td>
+					<td></td>
+					<td>90 / 146</td>
+					<td>Finished</td>
+					<td><i class="fas fa-route fa-lg"></i></td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">07:30 Vardiyası</th>
+					<td>Bahçeşehir</td>
+					<td>07:30</td>
+					<td>Murat Korkut</td>
+					<td></td>
+					<td>57 / 97</td>
+					<td>Finished</td>
+					<td><i class="fas fa-route fa-lg"></i></td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">07:30 Vardiyası</th>
+					<td>Bşk.&Ağa.</td>
+					<td>07:30</td>
+					<td>Mahmut Mercan</td>
+					<td></td>
+					<td>75 / 98</td>
+					<td>Finished</td>
+					<td><i class="fas fa-route fa-lg"></i></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 </body>
-
 </html>
