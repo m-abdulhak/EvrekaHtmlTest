@@ -25,10 +25,10 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm">
+			<div class="col-12">
 				<i class="fas fa-map fa-2x darkgrey"></i>
 				<div class="btn-group btn-group-sm" role="group" aria-label="...">
-					<input type="text" class="form-control faded" placeholder="05.04.2019">
+					<input type="text" class="form-control date-selector faded" placeholder="05.04.2019">
 					<div class="input-group-prepend faded">
 						<div class="input-group-text faded" id="btnGroupAddon">
 							<i class="far fa-calendar-alt"></i>
@@ -56,115 +56,120 @@
 			</div>
 		</div>
 
-		<table class="table table-borderless">
-			<thead>
-				<tr>
-					<th scope="col">Name<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Vehicle  <div class="pen-wrapper border-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Time<i class="fas fa-sort-amount-down float-right"></i></th>
-					<th scope="col">Driver<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Helper<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Performance  <div class="pen-wrapper border-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col">Status<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
-					<th scope="col"></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="search-row">
-					<th scope="row">
-						<input type="text" class="form-control" placeholder="Search">
-					</th>
-					<td>
-						<input type="text" class="form-control" placeholder="Search">
-					</td>
-					<td>
-						<input type="text" class="form-control" placeholder="Search">
-					</td>
-					<td>
-						<input type="text" class="form-control" placeholder="Search">
-					</td>
-					<td>
-						<input type="text" class="form-control" placeholder="Search">
-					</td>
-					<td>
-						<input type="text" class="form-control faded" placeholder="Search">
-					</td>
-					<td>
-						<input type="text" class="form-control" placeholder="Search">
-					</td>
-				</tr>
-				<tr class="table-light">
-					<th scope="row">13:30 Vardiyası</th>
-					<td>Fenertepe</td>
-					<td>13:12</td>
-					<td>Tanir Nalnant</td>
-					<td></td>
-					<td>21 / 101</td>
-					<td class="text-success">Dispatched</td>
-					<td><i class="fas fa-route fa-lg"></i></td>
-				</tr>
-				<tr class="table-light">
-					<th scope="row">13:30 Vardiyası</th>
-					<td>Boğazköy</td>
-					<td>13:11</td>
-					<td>Selçuk Yurt</td>
-					<td></td>
-					<td>18 / 80</td>
-					<td class="text-success">Dispatched</td>
-					<td><i class="fas fa-route fa-lg"></i></td>
-				</tr>
-				<tr class="table-light">
-					<th scope="row">07:30 Vardiyası</th>
-					<td>Başakşehir</td>
-					<td>07:30</td>
-					<td>Emri Akça</td>
-					<td></td>
-					<td>107 / 148</td>
-					<td>Finished</td>
-					<td><i class="fas fa-route fa-lg"></i></td>
-				</tr>
-				<tr class="table-light">
-					<th scope="row">07:30 Vardiyası</th>
-					<td>4.5.Etap</td>
-					<td>07:30</td>
-					<td>Yaşar Demir</td>
-					<td></td>
-					<td>102 / 138</td>
-					<td>Finished</td>
-					<td><i class="fas fa-route fa-lg"></i></td>
-				</tr>
-				<tr class="table-light">
-					<th scope="row">07:30 Vardiyası</th>
-					<td>Kayaşehir</td>
-					<td>07:30</td>
-					<td>Ömer Osman Ekiz</td>
-					<td></td>
-					<td>90 / 146</td>
-					<td>Finished</td>
-					<td><i class="fas fa-route fa-lg"></i></td>
-				</tr>
-				<tr class="table-light">
-					<th scope="row">07:30 Vardiyası</th>
-					<td>Bahçeşehir</td>
-					<td>07:30</td>
-					<td>Murat Korkut</td>
-					<td></td>
-					<td>57 / 97</td>
-					<td>Finished</td>
-					<td><i class="fas fa-route fa-lg"></i></td>
-				</tr>
-				<tr class="table-light">
-					<th scope="row">07:30 Vardiyası</th>
-					<td>Bşk.&Ağa.</td>
-					<td>07:30</td>
-					<td>Mahmut Mercan</td>
-					<td></td>
-					<td>75 / 98</td>
-					<td>Finished</td>
-					<td><i class="fas fa-route fa-lg"></i></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</body>
-</html>
+		<div class="row">
+			<div class="col-sm">
+				<div class="table-responsive">
+					<table class="table table-borderless">
+						<thead>
+							<tr>
+								<th scope="col">Name<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+								<th scope="col">Vehicle  <div class="pen-wrapper border-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+								<th scope="col">Time<i class="fas fa-sort-amount-down float-right"></i></th>
+								<th scope="col">Driver<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+								<th scope="col">Helper<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+								<th scope="col">Performance  <div class="pen-wrapper border-circle"><i class="fas fa-pen fa-xs"></i></div><i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+								<th scope="col">Status<i class="fas fa-exchange-alt fa-rotate-90 float-right text-secondary"></i></th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="search-row">
+								<th scope="row">
+									<input type="text" class="form-control" placeholder="Search">
+								</th>
+								<td>
+									<input type="text" class="form-control" placeholder="Search">
+								</td>
+								<td>
+									<input type="text" class="form-control" placeholder="Search">
+								</td>
+								<td>
+									<input type="text" class="form-control" placeholder="Search">
+								</td>
+								<td>
+									<input type="text" class="form-control" placeholder="Search">
+								</td>
+								<td>
+									<input type="text" class="form-control faded" placeholder="Search">
+								</td>
+								<td>
+									<input type="text" class="form-control" placeholder="Search">
+								</td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">13:30 Vardiyası</th>
+								<td>Fenertepe</td>
+								<td>13:12</td>
+								<td>Tanir Nalnant</td>
+								<td></td>
+								<td>21 / 101</td>
+								<td class="text-success">Dispatched</td>
+								<td><i class="fas fa-route fa-lg"></i></td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">13:30 Vardiyası</th>
+								<td>Boğazköy</td>
+								<td>13:11</td>
+								<td>Selçuk Yurt</td>
+								<td></td>
+								<td>18 / 80</td>
+								<td class="text-success">Dispatched</td>
+								<td><i class="fas fa-route fa-lg"></i></td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">07:30 Vardiyası</th>
+								<td>Başakşehir</td>
+								<td>07:30</td>
+								<td>Emri Akça</td>
+								<td></td>
+								<td>107 / 148</td>
+								<td>Finished</td>
+								<td><i class="fas fa-route fa-lg"></i></td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">07:30 Vardiyası</th>
+								<td>4.5.Etap</td>
+								<td>07:30</td>
+								<td>Yaşar Demir</td>
+								<td></td>
+								<td>102 / 138</td>
+								<td>Finished</td>
+								<td><i class="fas fa-route fa-lg"></i></td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">07:30 Vardiyası</th>
+								<td>Kayaşehir</td>
+								<td>07:30</td>
+								<td>Ömer Osman Ekiz</td>
+								<td></td>
+								<td>90 / 146</td>
+								<td>Finished</td>
+								<td><i class="fas fa-route fa-lg"></i></td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">07:30 Vardiyası</th>
+								<td>Bahçeşehir</td>
+								<td>07:30</td>
+								<td>Murat Korkut</td>
+								<td></td>
+								<td>57 / 97</td>
+								<td>Finished</td>
+								<td><i class="fas fa-route fa-lg"></i></td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">07:30 Vardiyası</th>
+								<td>Bşk.&Ağa.</td>
+								<td>07:30</td>
+								<td>Mahmut Mercan</td>
+								<td></td>
+								<td>75 / 98</td>
+								<td>Finished</td>
+								<td><i class="fas fa-route fa-lg"></i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
